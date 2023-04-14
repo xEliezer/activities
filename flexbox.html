@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .header {
+            background: #2993fc;
+            color: #fff;
+            padding: 15px;
+            padding-left: 40px;
+            margin: 15px;
+            border-radius: 10px;
+            flex-wrap: wrap;
+        }
+        /* ------------main-------------- */
+        #container {
+            color: #fff;
+            margin: 15px;
+            border-radius: 10px;
+            display: flex;
+            flex-basis: content;
+        }
+        .main {
+            background: #42b273;
+            padding-left: 40px;
+            border-radius: 10px;
+        }
+        .flex-container{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        .item-box{
+            display: flex;
+            background-color: #348c5b;
+            text-align: center;
+            padding: 30px;
+            padding-left: 50px;
+            padding-right: 50px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        /* ------------sidebar-------------- */
+        #container-side {
+            background-color: #fd644e;
+            color: #fff;
+            padding-left: 40px;
+            padding-right: 100px;
+            margin-left: 15px;
+            border-radius: 10px;
+            flex-wrap: wrap;
+        }
+        /* ------------footer-------------- */
+        .footer {
+            background-color: #446dde;
+            color: #fff;
+            padding: 15px;
+            padding-left: 40px;
+            margin: 15px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <h1>header</h1>
+    </div>
+    <!-- main -->
+    <div id="container">
+        <div class="main">
+            <h1>main</h1>
+        <div class="flex-container">
+            <div class="item-box"><h1>item</h1></div>
+            <div class="item-box"><h1>item</h1></div>
+            <div class="item-box"><h1>item</h1></div>
+            <div class="item-box"><h1>item</h1></div>
+            <div class="item-box"><h1>item</h1></div>
+            <div class="item-box"><h1>item</h1></div>
+            <div class="item-box"><h1>item</h1></div>
+            <div class="item-box"><h1>item</h1></div>
+            <div class="item-box"><h1>item</h1></div>
+            <div class="item-box"><h1>item</h1></div>
+            <div class="item-box"><h1>item</h1></div>
+        </div>
+        </div>
+        <div id="container-side">
+            <div class="side">
+                <h1>sidebar</h1>
+            </div>
+        </div>
+    </div>
+    
+    <!-- footer -->
+    <footer class="footer">
+        <h1>footer</h1>
+    </footer>
+</body>
+</html>

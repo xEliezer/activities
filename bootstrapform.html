@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BootsrapForm</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+  <section class="d-flex">
+  <div class="col-md-2 mt-5 ms-10 me-0 container-fluid items-end">
+    <div class="row">
+      <div class="d-flex">
+        <h3 class="text-primary justify-content-start">Your cart</h3>
+        <h3 class="ms-5 ps-2 pe-2 rounded-circle bg-primary text-white text-center">3</h3>
+      </div>
+      <div class="col-md-10 mt-3 ps-3 pt-1 border rounded-top">
+        <h5 class="m-0 p-0 ">Product name</h5>
+        <div class="form-text text-dark-subtle" id="basic-addon4">Brief description</div>
+      </div>
+      <div class="col-md-10 ps-3 pt-2 border">
+        <h5>Second product</h5>
+        <div class="form-text" id="basic-addon4">Brief description</div>
+      </div>
+      <div class="col-md-10 ps-3 pt-2 mb-3 border rounded-bottom">
+        <h5>Third item</h5>
+        <div class="form-text" id="basic-addon4">Brief description</div>
+      </div>
+          
+        <div class="col-md-10 p-2 border rounded">
+          <label class="visually-hidden" for="autoSizingInputGroup">Promo code</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Promo code">
+            <div class="input-group-text bg-dark text-white">Redeem</div>
+          </div>
+        </div>
+    </div>
+  </div>
+      
+  <div class="col-md-4 mt-5 ms-0 me-10 container-fluid">
+    <div class="row">
+      <h3>Billing Address</h3>
+      <div class="col-6 g-3">
+        <label for="inputFname" class="mb-2">First name</label>
+        <input type="text" class="form-control g-3">
+      </div>
+      <div class="col-6 g-3">
+        <label for="inputLname" class="mb-2">Last name</label>
+        <input type="text" class="form-control g-3">
+      </div>
+      <div class="col-12 g-3">
+        <label for="inputUname" class="mb-2">Username</label>
+        <div class="input-group">
+          <div class="input-group-text bg-light text-dark">@</div>
+          <input type="text" class="form-control col" placeholder="Username">
+        </div>
+      </div>
+      <div class="col-12 g-3">
+        <label for="inputEmail" class="mb-2">Email<span class="text-secondary"> (Optional)</span></label>
+        <input type="email" class="form-control col" placeholder="you@example.com">
+      </div>
+      <div class="col-12 g-3">
+        <label for="inputBrgy" class="mb-2">Barangay</label>
+        <input type="text" class="form-control col">
+      </div>
+      <div class="col-12 g-3">
+        <label for="inputCity" class="mb-2">City</label>
+        <input type="text" class="form-control col mb-3">
+      </div>
+
+      <div class="col-5 mb-3">
+        <label for="inputProvince" class="mb-2">Province</label>
+        <select class="form-select form-select-md mb-3" aria-label=".form-select-md example">
+          <option selected>Choose...</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+
+      <div class="col-3">
+        <label for="inputZip" class="mb-2">Zip</label>
+        <input type="text" class="form-control">
+      </div>
+      <hr class="ms-2">
+
+      <div class="container-fluid">
+        <div class="row">
+          <h3 class="col mb-3">Payment</h3>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Credit card
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Debit card
+          </label>
+        </div>
+        <div class="row">
+          <div class="col-6 g-3">
+            <label for="inputCardName" class="mb-2">Name on card</label>
+            <input type="text" class="form-control mb-1 g-3">
+            <div class="form-text" id="basic-addon4">Full name as displayed on card.</div>
+          </div>
+          <div class="col-6 g-3">
+            <label for="inputCcnumber" class="mb-2">Credit card number</label>
+            <input type="text" class="form-control g-3">
+          </div>
+
+          <div class="col-4 g-3">
+            <label for="inputExpire" class="mb-2">Expiration</label>
+            <input type="text" class="form-control mb-1 g-3">
+          </div>
+          <div class="col-2 g-3">
+            <label for="inputCVV" class="mb-2">CVV</label>
+            <input type="text" class="form-control">
+          </div>
+
+          <hr class="ms-2 mt-3">
+
+          <button type="submit" class="btn text-center align-center text-white bg-primary fw-bold p-2 ms-2">
+            <h5>Continue to checkout</h5>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+</body>
+
+</html>
+
+
+
+
+<!-- your cart header -->
+<!-- <section class="form d-flex">
+      <div class="container container-fluid">
+        <div class="row">
+          <div class="col-md-5 m-5 mb-1 d-flex">
+            <div>
+              <h3 class="text-primary">Your cart</h3>
+            </div>
+            <div class="col-md-4 ms-5 text-center text-white bg-primary rounded">
+              <h4 class="fw-bold">3</h4></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+<!-- cart -->
+<!-- <section class="cart">
+      <form>
+      <div class="container container-fluid">
+        <div class="row">
+        <div class="col-md-3 ms-5 mt-1 mb-1 border rounded">
+          <div><h5 class="fw-bold ms-2 mt-3 mb-1">Product name</h5>
+            <p class="ms-2">Brief description</p>
+          </div>
+          <hr>
+          <div><h5 class="fw-bold ms-2 mt-2 mb-1">Second product</h5>
+            <p class="ms-2">Brief description</p>
+          </div>
+          <hr>
+          <div><h5 class="fw-bold ms-2 mt-2 mb-1">Third item</h5>
+            <p class="ms-2">Brief description</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+      <div class="col-3 ms-5 mt-3 p-2 border rounded">
+        <label class="visually-hidden" for="autoSizingInputGroup">Promo code</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Promo code">
+          <div class="input-group-text bg-dark text-white">Redeem</div>
+        </div>
+      </div>
+      </div>
+      </form> -->
+<!-- </main> -->
+<!-- billing address -->
+<!-- <section id="billing" class="col-md-6">
+    <div class="container container-fluid">
+      <div class="col-md-6 mt-5">
+        <h3>Billing Address</h3>
+      </div>
+      <form class="row g-3">
+          <div class="col-md-4">
+            <label for="inputFname" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="inputFname">
+          </div>
+          <div class="col-md-4">
+            <label for="inputLname" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="inputLname">
+          </div>
+          <div class="col-8">
+            <label for="inputUname" class="form-label">Username</label>
+            <div class="input-group-text bg-body-tertiary text-dark">@</div>
+            <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+          </div>
+      </form>
+    </div>
+  </section> -->

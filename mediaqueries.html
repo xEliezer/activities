@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+</head>
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .header {
+        text-align: center;
+        background-color: rgb(110, 219, 110);
+        padding: 20px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: flex-start;
+        background-color: rgb(55, 55, 55);
+    }
+
+    .navbar a {
+        padding: 15px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #container {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .lifestyle {
+        max-width: 300px;
+        height: auto;
+        margin: 0;
+        padding: 15px;
+        justify-content: flex-start;
+        text-align: start;
+        border: rgb(110, 219, 110) solid 1px;
+        position: relative;
+        font-size: 20px;
+    }
+    .business {
+        max-width: 300px;
+        height: auto;
+        margin: 0;
+        padding: 15px;
+        justify-content: flex-start;
+        text-align: start;
+        border: rgb(110, 219, 110) solid 1px;
+        position: relative;
+        font-size: 20px;
+    }
+    .sports {
+        max-width: 300px;
+        height: auto;
+        margin: 0;
+        padding: 15px;
+        justify-content: flex-start;
+        text-align: start;
+        border: rgb(110, 219, 110) solid 1px;
+        position: relative;
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: 1440px) {
+        .header {
+            background-color: #e67e23;
+        }
+
+    }
+
+    @media screen and (max-width: 992px) {
+        .header {
+            background-color: #3598db;
+        }
+        .sports {
+            display: none;
+        }
+
+    }
+
+    @media screen and (max-width: 600px) {
+        .header {
+            background-color: #e03e2d;
+        }
+        .sorts {
+            display: none;
+        }
+        .business {
+            display: none;
+        }
+
+
+    }
+</style>
+
+<body>
+    <section class="header">
+        <h1>Online Magazine</h1>
+    </section>
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+    </nav>
+    <main id="container">
+        <div class="lifestyle">
+            <h3>Lifestyle</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maecenas sit amet pretium urna.</p>
+        </div>
+        <div class="business">
+            <h3>Business</h3>
+            <p>Vivamus venenatis velit nec neque ulricies, eget elementum magna tristique.</p>
+        </div>
+        <div class="sports">
+            <h3>Sports</h3>
+            <p>Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit.
+            </p>
+        </div>
+    </main>
+
+
+</body>
+
+</html>
